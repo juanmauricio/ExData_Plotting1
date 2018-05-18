@@ -12,3 +12,7 @@ locale = locale("en"))
 hpc2 <-subset( hpc, Date >= as.Date("2007-02-01") & Date <= as.Date("2007-02-02"))
 
 hist(hpc2$Global_active_power, col = "green", main = "Global Active Power", xlab = "Global Active Power (kilowatts)")
+
+dev.copy(png, file = "plot1.png")
+
+dev.off()
